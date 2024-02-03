@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "elastic-etl"
+version = "0.1.0"
+description = "temporal etl workflow"
+authors = ["Vishal Talwar <vtalwar.w@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+grpcio-channelz = "^1.60.1"
+grpcio-tools = "^1.60.1"
+protobuf = "^4.25.2"
+python-dotenv = "^1.0.1"
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^3.0.3"
+pytest-cov = "^4.1.0"
+pytest = "^8.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
